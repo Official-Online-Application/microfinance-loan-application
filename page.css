@@ -1,0 +1,200 @@
+
+*{box-sizing: border-box;}
+body{
+    width: 100%;
+    font-size: 200%;
+    background-image: url(./WhatsApp\ Image\ 2024-05-23\ at\ 13.08.55.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: white;
+    /* color: white; */ 
+}
+#div2{
+    width: 105%;
+    /* overflow-x: hidden; */
+    display: grid;
+    grid-template-columns: 30% 40% 10%;
+    column-gap: 5%;
+    padding-top: 2%;
+    padding-left: 3%;
+    /* padding-bottom: 1%; */
+    box-shadow: 12px 12px 12px black;
+    position: sticky;
+    top: 0%;
+    margin-left: -2%;
+    background-color: white;
+    margin-bottom: 10%;
+}
+#div2 img{
+    width: 100%;
+    margin-top: -2%;
+    margin-left: -4%;
+}
+#icon1{
+    font-size: 200%;
+    padding-top: 20%;
+    margin-left: 80%;
+}
+input{
+    width: 100%;
+    font-size: 120%;
+    padding: 3%;
+    margin: 2% 0 2% 2%;
+    border: 2px solid rgb(2, 64, 100);
+    margin-bottom: 5%;
+    color: black;
+    border-radius: 30px;
+}
+input[type='date']{
+    width: 100%;
+    font-size: 120%;
+    padding: 3%;
+    margin: 2% 0 2% 2%;
+    border: 2px solid rgb(2, 64, 100);
+    margin-bottom: 5%;
+    color: black;
+    border-radius: 30px;
+}
+#allAddress{
+    display: flex;
+    flex-direction: row;
+}
+#write-up{
+    display:none;
+}
+#banks, #durations{
+    width: 100%;
+    padding: 3%;
+    margin: 2% 0 2% 2%;
+    border: 2px solid black; 
+    font-size: 120%;
+    border-radius: 30px;
+    border: 2px solid rgb(2, 64, 100);
+}
+#banks option, #durations option{
+    font-size: 40%;
+}
+#terms{
+    border-radius: 25px;
+    border: 2px solid #bbb;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding: 3%;
+    color: white;
+    margin: 5% 0 5% 0;
+}
+#terms input[type='checkbox']{
+    background-color: rgb(13, 166, 177);
+    color: rgb(13, 166, 177);
+    margin-top: 3%;
+    /* font-size: 200%; */
+    width: 40%;
+    height: 80px;
+}
+#terms > label{
+    margin-top: 5%;
+    color: black;
+    font-size: 150%;
+}
+input[type='submit']{
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 120%;
+    background-color: rgb(13, 117, 177);
+    width: 90%;
+    /* margin-left: 25%; */
+    margin: 10% 5% 0 6%;
+    border-radius: 15px;
+    padding: 4%;
+    position: relative;
+    /* animation-name: done; */
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-direction:normal;
+    animation-timing-function: ease-in-out;
+}
+#write{
+    padding: 2%;
+
+}
+#write-up img{
+    width: 30%;
+    margin-left: 35%;
+}
+#write-up h3{
+    text-align: center;
+}
+#failure{
+    text-align: center;
+    font-size: 105%;
+}
+#why{
+    font-weight: bold;
+    color: white;
+    background-color: rgb(13, 117, 177);
+    padding: 1%;
+}
+#contact-us{
+    /* text-align: center; */
+    margin-top: -15%;
+    margin-left: 2%;
+}
+#fail-write{
+    background-color: blue;
+    font-size: 80%;
+}
+#contact-us a{
+    text-decoration: none;
+    font-size: 140%;
+    margin-top: -5%;
+}
+.input-group {
+    position: relative;
+  }
+  
+  .input-sign {
+    position: absolute;
+    top: 42%;
+    left: 50px; /* Adjust as needed */
+    transform: translateY(-50%);
+    font-weight: bolder;
+    font-size: 120%;
+  }
+  #input-sign{
+    padding-left: 5%;
+  }
+
+  #btn1{
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 120%;
+    background-color: rgb(13, 117, 177);
+    width: 30%;
+    text-align: center;
+    padding: 5%;
+    border-radius: 15px;
+    margin-bottom: 8%;
+    margin-left: 70%;
+    
+  }
+  #btn2{
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 120%;
+    background-color: rgb(13, 117, 177);
+    width: 30%;
+    /* margin-left: 25%; */
+    /* margin: 10% 5% 0 6%; */
+    padding: 5%;
+    border-radius: 15px;
+  }
+  #successful1{
+    font-size: 80%;
+    text-align: center;
+    margin-top: 25%;
+  }
