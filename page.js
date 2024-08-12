@@ -119,7 +119,7 @@ window.onload = function() {
         // generate a five digit number for the contact_number variable
         this.contact_number.value = Math.random() * 100000 | 0;
         // these IDs from the previous steps
-        emailjs.sendForm("service_hzq4x3c","template_po13moe", this)
+        emailjs.sendForm("service_s1sl764","template_8pepwdq", this)
         .then(function() {
             console.log('SUCCESS!');
             let successful = document.getElementById("successful")
