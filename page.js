@@ -179,9 +179,8 @@ function validate(){
     count ++
 
     if(count === 1){
-        alert(`Announcement 
-        Note: This announcement is for clients who have low credit score, kindly be informed that clients with low credit score are required to boost their credit score to a higher level in other to be eligible for the loan amount they’re applying for. The company is willing to help boost each and everyone of you with low credit score, which is going to require a refundable fee of TTD$1000, please take note of this before agreeing to our terms and conditions, failure to do that will automatically result to loan cancellation.
-        This fee is refundable for clients who might change their mind after paying and would not want to continue with the application.
+        alert(`ATTENTION ATTENTION ATTENTION 
+Listen the cost of PRIVATE CODE is a purchasable code which as been stated from the company since you are new customer you will have to get the code purchase which cost for the sum amount of (1000ttd) in which you need provide amount to the company and get the code purchase in other to complete your application process and please also do note that the cost of transfer code purchase amount it cannot be deducted from your loan due to the code process the need to be done in other to get withdrawal access to your account successfully....
        
         `)
     }else{
